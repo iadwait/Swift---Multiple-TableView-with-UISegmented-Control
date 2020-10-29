@@ -29,6 +29,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     {
         cityTableView.delegate = self
         cityTableView.dataSource = self
+        let font = UIFont.systemFont(ofSize: 16)
+        citySegment.setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
         addData()
     }
     
@@ -125,7 +127,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             cell.lblTitle.text = data.festivalName
             cell.lblCity.text = data.city
         }
-        
+        cell.imgCity.layer.borderColor = UIColor.black.cgColor
+        cell.imgCity.layer.borderWidth = 1
+        cell.imgCity.layer.cornerRadius = cell.imgCity.frame.size.height / 2
         return cell
     }
     
