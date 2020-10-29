@@ -33,24 +33,28 @@ class DetailsViewController: UIViewController {
         {
             img.image = ahData?.img!
             lblTitle.text = ahData?.festivalName
+            lblDescription.text = ahData?.desc
             lblCityName.text = "Ahemdabad"
         }
         if cityTable == 1
         {
             img.image = muData?.img!
             lblTitle.text = muData?.festivalName
+            lblDescription.text = muData?.desc
             lblCityName.text = "Mumbai"
         }
         if cityTable == 2
         {
             img.image = baData?.img!
             lblTitle.text = baData?.festivalName
+            lblDescription.text = baData?.desc
             lblCityName.text = "Bangalore"
         }
         if cityTable == 3
         {
             img.image = puData?.img!
             lblTitle.text = puData?.festivalName
+            lblDescription.text = puData?.desc
             lblCityName.text = "Pune"
         }
     }
