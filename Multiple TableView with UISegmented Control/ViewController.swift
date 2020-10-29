@@ -133,5 +133,27 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return 80
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = storyboard?.instantiateViewController(identifier: "DetailsViewController") as! DetailsViewController
+        detailVC.cityTable = citySegment.selectedSegmentIndex
+        //print(indexPath)
+        //print(citySegment.selectedSegmentIndex)
+        let value = citySegment.selectedSegmentIndex
+        if value == 0
+        {
+            detailVC.ahData = ahData[indexPath.row]
+        }else if value == 1
+        {
+            detailVC.muData = muData[indexPath.row]
+        }else if value == 2
+        {
+            detailVC.baData = baData[indexPath.row]
+        }else if value == 3
+        {
+            detailVC.puData = puData[indexPath.row]
+        }
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
 }
 
