@@ -11,24 +11,28 @@ import UIKit
 
 struct AhemdabadModel{
     let img: UIImage?
-    let title: String?
+    let festivalName: String?
     let city: String?
+    let desc: String?
 }
 
 struct MumbaiModel{
     let img: UIImage?
-    let title: String?
+    let festivalName: String?
     let city: String?
+    let desc: String?
 }
 
 struct BangaloreModel{
     let img: UIImage?
-    let title: String?
+    let festivalName: String?
     let city: String?
+    let desc: String?
 }
 
 struct PuneModel{
     let img: UIImage?
-    let title: String?
+    let festivalName: String?
     let city: String?
+    let desc: String?
 }

@@ -19,6 +19,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblCityName: UILabel!
+    @IBOutlet weak var lblDescription: UILabel!
     
     
     override func viewDidLoad() {
@@ -31,25 +32,25 @@ class DetailsViewController: UIViewController {
         if cityTable == 0
         {
             img.image = ahData?.img!
-            lblTitle.text = ahData?.title
+            lblTitle.text = ahData?.festivalName
             lblCityName.text = "Ahemdabad"
         }
         if cityTable == 1
         {
             img.image = muData?.img!
-            lblTitle.text = muData?.title
+            lblTitle.text = muData?.festivalName
             lblCityName.text = "Mumbai"
         }
         if cityTable == 2
         {
             img.image = baData?.img!
-            lblTitle.text = baData?.title
+            lblTitle.text = baData?.festivalName
             lblCityName.text = "Bangalore"
         }
         if cityTable == 3
         {
             img.image = puData?.img!
-            lblTitle.text = puData?.title
+            lblTitle.text = puData?.festivalName
             lblCityName.text = "Pune"
         }
     }

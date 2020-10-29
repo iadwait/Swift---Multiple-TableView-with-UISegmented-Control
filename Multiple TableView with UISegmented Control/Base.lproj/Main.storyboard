@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Choose City & Festival-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Multiple_TableView_with_UISegmented_Control" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,7 +101,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WaY-Cb-7TA"/>
+                    <navigationItem key="navigationItem" title="Choose City &amp; Festival" id="WaY-Cb-7TA"/>
                     <connections>
                         <outlet property="citySegment" destination="uZg-T4-ivl" id="aWr-vw-SFY"/>
                         <outlet property="cityTableView" destination="TBp-TU-BrQ" id="SgA-yI-VsY"/>
@@ -137,6 +137,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjO-3Z-Zmb">
+                                <rect key="frame" x="20" y="498" width="374" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="akf-7x-aw5"/>
@@ -144,6 +151,7 @@
                     <connections>
                         <outlet property="img" destination="53N-wX-gej" id="UJg-FP-n8c"/>
                         <outlet property="lblCityName" destination="xlV-0p-eB3" id="OrI-P2-3Q1"/>
+                        <outlet property="lblDescription" destination="gjO-3Z-Zmb" id="4DG-Vj-GDo"/>
                         <outlet property="lblTitle" destination="YP0-vL-gYT" id="xbY-Vt-qR5"/>
                     </connections>
                 </viewController>
